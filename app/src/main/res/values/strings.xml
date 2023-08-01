@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Unicode IT</string>
+    <string name="date">Date</string>
+    <string name="invoice_no">Invoice No</string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="address">Address</string>
+    <string name="scan">Scan</string>
+    <string name="device_connected">Device Connected</string>
+    <string name="device_connection_falied">Device Connection Failed</string>
+    <string name="device_connection_close">Device Connection close</string>
+    <string name="printer_setup">Printer Setup</string>
+    <string name="searching_printer">Searching printers.....</string>
+    <string name="turn_on_bluetooth">Turn on Bluetooth</string>
+    <string name="searching_printers">Searching printers.....</string>
+    <string name="no_printer_found">No printers found</string>
+    <string name="connecting">Connecting…</string>
+    <string name="close">Close\n</string>
+    <string name="type">Type</string>
+</resources>
