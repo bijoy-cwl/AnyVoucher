@@ -2,17 +2,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_gravity="center"
-    android:gravity="center"
-    android:background="#ffffff"
+    android:id="@+id/g"
+    android:background="#4A248E"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.SplashActivity">
 
     <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
         android:layout_margin="20dp"
+        android:src="@drawable/app_logo" />
+
+    <TextView
+
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
-        android:src="@drawable/logo"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Any Voucher"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
 
 </LinearLayout>

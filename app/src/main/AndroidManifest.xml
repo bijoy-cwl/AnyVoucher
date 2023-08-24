@@ -17,28 +17,32 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.UnicodeIT"
+        android:theme="@style/Theme.AnyVoucher"
         tools:targetApi="31">
         <activity
-            android:name=".SplashActivity"
-            android:screenOrientation="portrait"
-            android:exported="true" >
+            android:name=".view.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.InitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            android:exported="true"/>
+            android:name=".view.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".printer.PrinterConnectActivity"
-            android:screenOrientation="portrait"
-            android:exported="true">
-        </activity>
+            android:name=".view.PrinterConnectActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

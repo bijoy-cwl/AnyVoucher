@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1089499152303",
+    "project_id": "anyvoucher-4058a",
+    "storage_bucket": "anyvoucher-4058a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089499152303:android:c94fc6d191d6372d3db95a",
+        "android_client_info": {
+          "package_name": "com.anyvoucher.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089499152303-c9i3ef11hpjhpaoet4alvci3u53qd77p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anyvoucher.app",
+            "certificate_hash": "af361403d71931c9aa4d582c1e5ba5c4597806c8"
+          }
+        },
+        {
+          "client_id": "1089499152303-dcluocipqb12jv3p9ti9d4mnven66u86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMl89bK4LT2mIB1bkfxWQyVKD0wgrG-3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089499152303-dcluocipqb12jv3p9ti9d4mnven66u86.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

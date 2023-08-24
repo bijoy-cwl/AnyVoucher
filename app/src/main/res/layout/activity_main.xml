@@ -5,16 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize">
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4A248E"
+        android:gravity="center">
 
-        <ImageView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/logo" />
+            android:text="Any Voucher"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <View
@@ -35,33 +41,34 @@
             android:layout_above="@id/bottomLL">
 
             <androidx.cardview.widget.CardView
-                app:cardCornerRadius="8dp"
-                android:layout_margin="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+
                 <LinearLayout
-                    android:layout_marginBottom="30dp"
-                    android:background="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/white"
                     android:orientation="vertical">
 
                     <TextView
-                        android:visibility="gone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="BILL"
                         android:textColor="@color/black"
                         android:textSize="30sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:visibility="gone" />
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/typeTIL"
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
 
                         android:hint="@string/type">
 
@@ -71,17 +78,17 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:imeOptions="actionNext"
-                            android:text="BILL"
-                            android:nextFocusDown="@id/dateET" />
+                            android:nextFocusDown="@id/dateET"
+                            android:text="BILL" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/dateTIL"
-                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
 
                         android:hint="@string/date">
 
@@ -217,18 +224,18 @@
                             android:id="@+id/totalET"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="text"
                             android:imeOptions="actionNext"
+                            android:inputType="text"
                             android:nextFocusDown="@id/noteET" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/noteTIL"
-                        android:layout_marginBottom="50dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:layout_marginBottom="50dp"
                         android:background="@color/white"
                         android:hint="Note">
 
@@ -250,10 +257,10 @@
         </ScrollView>
 
         <LinearLayout
-            android:layout_alignParentBottom="true"
             android:id="@+id/bottomLL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:orientation="vertical">
 
             <View
@@ -270,20 +277,20 @@
                 android:padding="10dp">
 
                 <Button
-                    android:onClick="print"
                     android:id="@+id/printButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="print"
                     android:text="Print" />
 
                 <Button
-                    android:onClick="clearData"
                     android:id="@+id/clearButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_weight="1"
+                    android:onClick="clearData"
                     android:text="Clear" />
 
             </LinearLayout>

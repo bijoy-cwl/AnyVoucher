@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Unicode IT</string>
+    <string name="app_name">Any Voucher</string>
     <string name="date">Date</string>
     <string name="invoice_no">Invoice No</string>
     <string name="name">Name</string>
@@ -17,4 +17,6 @@
     <string name="connecting">Connecting…</string>
     <string name="close">Close\n</string>
     <string name="type">Type</string>
+    <string name="default_web_client_id">1089499152303-dcluocipqb12jv3p9ti9d4mnven66u86.apps.googleusercontent.com</string>
+    <string name="submit">Submit</string>
 </resources>
