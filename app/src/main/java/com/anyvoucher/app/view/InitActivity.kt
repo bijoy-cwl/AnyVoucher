@@ -217,36 +217,39 @@ class InitActivity : AppCompatActivity() {
                     "cAddress" to address
                 )
 
-
-                db.collection("company").document(userData.uID).get().addOnSuccessListener {
-                    if (it.exists()){
+                db.collection("company")
+                    .document(userData.uID)
+                    .set(company)
+                    .addOnSuccessListener {
+                        prefs.setCompanyData(CompanyData(name,number,address))
                         loadingDialog.dismissDialog()
                         val intent2 = Intent(this@InitActivity, MainActivity::class.java)
                         startActivity(intent2)
                         finish()
-                    }else{
-                        // Add a new document with a generated ID
-                        db.collection("company")
-                            .document(userData.uID)
-                            .set(company)
-                            .addOnSuccessListener {
-                                prefs.setCompanyData(CompanyData(name,number,address))
-                                loadingDialog.dismissDialog()
-                                val intent2 = Intent(this@InitActivity, MainActivity::class.java)
-                                startActivity(intent2)
-                                finish()
-                                customDialog.dismiss();
-                                showToast("Login Successful")
-
-                            }
-                            .addOnFailureListener { e ->
-                                loadingDialog.dismissDialog()
-                                Log.w(TAG, "Error adding document", e)
-                                showToast("Something went wrong")
-                            }
+                        customDialog.dismiss();
+                        showToast("Login Successful")
 
                     }
-                }
+                    .addOnFailureListener { e ->
+                        loadingDialog.dismissDialog()
+                        Log.w(TAG, "Error adding document", e)
+                        showToast("Something went wrong")
+                    }
+
+
+
+//                db.collection("company").document(userData.uID).get().addOnSuccessListener {
+//                    if (it.exists()){
+//                        loadingDialog.dismissDialog()
+//                        prefs.setCompanyData(CompanyData(name,number,address))
+//                        val intent2 = Intent(this@InitActivity, MainActivity::class.java)
+//                        startActivity(intent2)
+//                        finish()
+//                    }else{
+//                        // Add a new document with a generated ID
+//
+//                    }
+//                }
 
 
 
